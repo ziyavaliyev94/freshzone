@@ -1,0 +1,95 @@
+.wishlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.wishlistCard {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.wishlistCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid #4caf50;
+}
+
+.itemImage img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+  max-height: 200px;
+}
+.itemImage {
+  position: relative;
+}
+
+.itemImage img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.deleteButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+
+.itemTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 12px 0 8px;
+  color: #333;
+}
+
+.itemDescription {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.itemPrice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 8px;
+}
+
+.itemCategory {
+  font-size: 0.9rem;
+  background-color: #e8f5e9;
+  color: #388e3c;
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 8px;
+}

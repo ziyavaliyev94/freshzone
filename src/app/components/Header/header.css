@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(https://templatemo.com/templates/templatemo_348_fresh_zone/images/templatemo_header.jpg);
+
+}
+
+.headCountainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 70%;
+    margin: 0 auto;
+
+    .logo {
+        cursor: pointer;
+    }
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
+            align-items: center;
+            position: relative;
+            .fa{
+                position: absolute;
+                right: -150px;
+                cursor: pointer;
+                color: red;
+                font-size: 20px;
+            }
+            .ri{
+                position: absolute;
+                right: -90px;
+                cursor: pointer;
+                color: green;
+                font-size: 20px;
+            }
+
+            li {
+                width: 70px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: 0.5s;
+
+                &:hover {
+                    background-color: #bb3a33;
+
+                    a {
+                        color: white;
+                    }
+                }
+
+                a {
+                    color: black;
+
+                }
+            }
+
+            .home {
+                background-color: #bb3a33;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
